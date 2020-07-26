@@ -1,0 +1,139 @@
+/* Master Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #8fbc8f;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.brand {
+  color: white;
+}
+
+.content-wrapper {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.center {
+  padding-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+/* Nav Styles */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.right-column {
+  display: flex;
+}
+
+.nav-wrapper > .right-column > div {
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a:hover {
+  color: white;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid white;
+}
+
+.active-nav-link a {
+  color: white !important;
+}
+/* Portfolio Styles */
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.img-text-wrapper .description {
+  transition: 1s;
+  font-weight: 1000;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .description {
+  font-weight: 1000;
+  color: #2b7a78;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+/* Experiences */
+
+.job {
+  border: 1px solid black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: gray;
+}
+.job-title {
+  font-size: 20px;
+}
+
+.job-description {
+  padding-top: 20px;
+}
